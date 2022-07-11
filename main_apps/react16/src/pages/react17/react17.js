@@ -38,7 +38,10 @@ const React17 = () => {
   return (
     <div>
       <micro-app
+        // 应用的名称； 必传； 每个name都对应一个应用，当多个应用同时渲染时，name不可以重复
         name='appname-react17'
+
+        // 应用地址；必传；基座应用和子应用本质是在同一个页面，这里的url只是html地址，子应用的路由还是基于浏览器地址
         url={`${config.react17}/child/react17/`}
         data={microAppData}
         onCreated={handleCreate}
